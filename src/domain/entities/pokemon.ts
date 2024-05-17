@@ -7,7 +7,20 @@ export interface Pokemon {
   avatar: string;
   sprites: string[];
 
+  color: string;
+ 
+  games: string[];
+  stats: Stat[];
+  abilities: string[];
+  moves: Move[];
+}
 
-   color: string;
-};
+export interface Stat {
+  name: string;
+  value: number;
+}
 
+export interface Move {
+  name: string;
+  level: number;
+}
